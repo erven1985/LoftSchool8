@@ -1,0 +1,42 @@
+<div class="main_div">
+    <div class="title">Выберите друзей</div>
+    <div class="search_input">
+        <div class="filter_wrapper">
+            <input oninput='filter("#left-list .friend_list_item","#left-input")' class="filter_input" id="left-input" type="text" placeholder="Начните вводить имя друга">
+        </div>
+        <div class="filter_wrapper">
+            <input oninput='filter("#right-list .friend_list_item","#right-input")' class="filter_input" id="right-input" type="text" placeholder="Начните вводить имя друга">
+        </div>
+    </div>
+    <div class="left_zone" id="zone-left">
+        <div class="zone zone_left" id="left-zone">
+            <div class="zone_title">Ваши друзья</div>
+            <ul class="friends_list" id="left-list">
+                
+            </ul>
+        </div>
+        <div class="zone zone_right" id="right-zone">
+            <div class="zone_title">Друзья в списке</div>
+            <ul class="friends_list" id="right-list">
+
+            </ul>
+        </div>
+    </div>
+    <div class="btn_wrapper">
+        <a href="#" class="save_btn" id="save_btn">Сохранить</a>
+    </div>
+</div>
+
+<script>
+    function filter(zone_id, input_id) {
+        const input = document.querySelector(input_id),
+              zone = document.querySelectorAll(zone_id),
+              term = input.value.toUpperCase();
+        for(let i=0; i<zone.length; i++) {
+            !zone[i].innerText.toUpperCase().includes(term) ? 
+            zone[i].style.display = 'none' :    
+            zone[i].style.display = 'flex'
+            
+        }
+    }
+</script>

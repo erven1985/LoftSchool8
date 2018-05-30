@@ -1,0 +1,140 @@
+li {
+    list-style: none;
+}
+ul {
+    padding: 0;
+    margin: 0;
+}
+body {
+    margin:0;
+}
+.main_cont {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,.5);
+    justify-content: center;
+    justify-items: center;
+}
+.main_div {
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    height: 80vh;
+    margin: auto;
+    border-radius: 10px;
+    background-color: #fff;
+    overflow: hidden;
+}
+.title {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    font-weight: 600;
+    height: 45px;
+    background-color: #ff8663;
+    color: #fff;
+}
+.search_input {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #efefef;
+    height: 45px;
+}
+.filter_wrapper {
+    flex: 1;
+    overflow: hidden;
+    border-radius: 10px;
+    font-size: 14px;
+    margin: 10px;
+}
+.filter_input {
+    width: 100%;
+    border: none;
+    outline: none;
+    height: 24px;
+    padding-left: 10px;
+    border-radius: 10px;
+}
+.left_zone {
+    overflow: hidden;
+    display: flex;
+    height: auto;
+    flex: 1;
+}
+.zone {
+    flex: 1;
+    padding: 15px;
+    font-size: 14px;
+    font-weight: bold;
+}
+ .zone.zone_right {
+    border-left: 1px solid #efefef;
+ }
+.zone_title {
+    margin: 5px 0;
+}
+.friends_list {
+    flex-flow: wrap;
+    align-items: flex-start;
+    display: block;
+    height: 100%;
+    overflow: auto;
+}
+.friend_list_item {
+    display: flex;
+    width: 100%;
+    padding: 5px 0;
+    height: 46px;
+    align-items: center;
+    justify-content: flex-end;
+    border-top: 1px solid #efefef;
+    
+}
+.friend_list_item:last-child {
+    border-bottom: 1px solid #efefef;
+}
+.friend_list_item:hover {
+    background-color: #efefef;
+}
+.image-wrapper {
+    height: 44px;
+    width: 44px;
+    margin-left: 8px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.friend_image {
+    height: 100%;
+    width: 100%;
+}
+.friend_name {
+    margin-left: 15px;
+}
+.x_button {
+    margin-left: auto;
+    font-size: 20px;
+    font-weight: normal;
+    color: #989898;
+    text-decoration: none;
+    padding: 15px;
+}
+
+.btn_wrapper {
+    display: flex;
+    justify-content: flex-end;
+    height: 45px;
+    background-color: #efefef;
+    align-items: center;
+    width: 100%;
+}
+.save_btn {
+    text-decoration: none;
+    padding: 8px 15px;
+    margin-right: 10px;
+    background-color: #ff8663;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 14px;
+}
